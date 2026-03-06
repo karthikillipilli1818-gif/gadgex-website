@@ -8,17 +8,27 @@
 
 body{
 margin:0;
-font-family:Segoe UI, Arial;
-background: linear-gradient(135deg,#e8f0ff,#ffffff,#e3f2fd);
+font-family: "Segoe UI", Arial;
 height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
+
+/* Premium Background */
+background: radial-gradient(circle at top,#ffffff,#dbeafe,#bfdbfe,#93c5fd);
 }
 
+/* Glass Container */
+
 .container{
-padding:40px;
+text-align:center;
+padding:60px 80px;
+border-radius:20px;
+
+background: rgba(255,255,255,0.65);
+backdrop-filter: blur(10px);
+
+box-shadow:0 20px 60px rgba(0,0,0,0.15);
 }
 
 .logo{
@@ -26,14 +36,15 @@ width:300px;
 margin-bottom:30px;
 }
 
+/* Gold Title */
+
 .title{
-font-size:50px;
+font-size:48px;
 font-weight:700;
 
-background: linear-gradient(45deg,#d4af37,#ffd700,#fff5b7);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
+background: linear-gradient(45deg,#caa74a,#ffd700,#fff4c2);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .subtitle{
