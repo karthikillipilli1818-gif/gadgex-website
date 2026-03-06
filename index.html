@@ -8,39 +8,64 @@
 
 body{
 margin:0;
-font-family: "Segoe UI", Arial;
+font-family:Segoe UI, Arial;
+background: radial-gradient(circle at top,#ffffff,#dbeafe,#bfdbfe,#93c5fd);
 height:100vh;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 4px 20px rgba(0,0,0,0.1);
+}
+
+.logo-text{
+font-size:22px;
+font-weight:600;
+}
+
+.menu a{
+margin-left:30px;
+text-decoration:none;
+color:#1e293b;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
 display:flex;
 align-items:center;
 justify-content:center;
-
-/* Premium Background */
-background: radial-gradient(circle at top,#ffffff,#dbeafe,#bfdbfe,#93c5fd);
-}
-/* Glass Container */
-.container{
+height:80vh;
 text-align:center;
+}
+
+.container{
 padding:60px 80px;
 border-radius:20px;
 
-background: rgba(255,255,255,0.65);
-backdrop-filter: blur(10px);
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(12px);
 
 box-shadow:0 20px 60px rgba(0,0,0,0.15);
 }
 
 .logo{
-width:300px;
+width:260px;
 margin-bottom:30px;
 }
 
-/* Gold Title */
-
 .title{
-font-size:48px;
+font-size:46px;
 font-weight:700;
 
-background: linear-gradient(45deg,#caa74a,#ffd700,#ffd700);
+background: linear-gradient(45deg,#caa74a,#ffd700,#fff4c2);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
@@ -57,9 +82,25 @@ color:#334155;
 
 <body>
 
+<div class="navbar">
+
+<div class="logo-text">GADGEX</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="browse.html">Browse</a>
+<a href="sell.html">Sell</a>
+<a href="#">How it Works</a>
+<a href="login.html">Login</a>
+</div>
+
+</div>
+
+<div class="hero">
+
 <div class="container">
 
-<img src="ChatGPT Image Mar 6, 2026, 09_07_54 PM.png" class="logo">
+<img src="logo.png" class="logo">
 
 <div class="title">
 India's Trusted Device Marketplace
@@ -67,6 +108,8 @@ India's Trusted Device Marketplace
 
 <div class="subtitle">
 Buy • Sell • Upgrade Devices
+</div>
+
 </div>
 
 </div>
